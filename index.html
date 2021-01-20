@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5FEZKE4JSV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5FEZKE4JSV");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>About Seneka | Classmate Edition</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-</head>
-<body>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
     <div class="loader" id="loader"></div>
     <div class="wrapper">
-    <div id="hud">
+      <div id="hud">
         <div id="hud-item">
-            <p id="progressText" class="hud-prefix">
-                Question
-            </p>
-            <h1 class="hud-main-text" id="questionCounter"> 
-                1/20
-            </h1> 
+          <p id="progressText" class="hud-prefix">Question</p>
+          <h1 class="hud-main-text" id="questionCounter">1/20</h1>
         </div>
         <div id="hud-item">
-            <p class="hud-prefix">
-                Score
-            </p>
-            <h1 class="hud-main-text" id="score">
-                0
-            </h1>
+          <p class="hud-prefix">Score</p>
+          <h1 class="hud-main-text" id="score">0</h1>
         </div>
+      </div>
     </div>
-</div>
 
     <div class="container hide" id="container">
-        <div id="question-container" class="hide">
-            <h1 id="question">Question</h1>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
+      <div id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
         </div>
-        <div class="controls">
-            <div id="title">😁About Seneka Quiz😁</div>
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
-            <h3 id="dom-score" class="dom-score" ></h3>
-        </div>
+      </div>
+      <div class="controls">
+        <div id="title">😁About Seneka Quiz😁</div>
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <h3 id="dom-score" class="dom-score"></h3>
+      </div>
     </div>
 
-   <p class="footer">Gimna Katugampala Production</p>
-    
+    <p class="footer">Gimna Katugampala Production</p>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
